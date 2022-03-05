@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowJs": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "@core/*":["src/*"],
+      "@test-data/*":["test/data/*"],
+    }
+  },
+  "include": [ "src/**/*", "test/**/*" ],
+  "exclude": [
+    "node_modules"
+  ]
+}
