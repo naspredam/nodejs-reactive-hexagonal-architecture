@@ -9,7 +9,10 @@
     "target": "es6",
     "baseUrl": ".",
     "paths": {
-      "@core/*":["src/*"],
+      "@adapter/*": ["src/adapter/*"],
+      "@application/*": ["src/application/*"],
+      "@domain/*": ["src/domain/*"],
+      "@infrastructure/*": ["src/infrastructure/*"],
       "@test-data/*":["test/data/*"],
     }
   },
