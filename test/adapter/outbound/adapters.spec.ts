@@ -1,5 +1,5 @@
 import { userReaderAdapter } from '@adapter/outbound/adapters';
-import * as repository from '@adapter/outbound/inMemoryRepository';
+import * as repository from '@infrastructure/inMemoryRepository';
 import { UserData } from '@adapter/outbound/models';
 import { createUUID } from '@infrastructure/utilities';
 import { first_name, last_name, phone } from 'casual';

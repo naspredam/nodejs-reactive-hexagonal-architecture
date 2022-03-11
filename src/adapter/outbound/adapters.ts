@@ -1,7 +1,7 @@
 import { UserData } from '@adapter/outbound/models';
 import { User, UserId } from '@domain/user';
 import { toPresentUser, toUser } from '@adapter/outbound/mappers';
-import { all } from '@adapter/outbound/inMemoryRepository';
+import { all } from '@infrastructure/inMemoryRepository';
 import { Observable, of, map } from 'rxjs';
 import { Maybe } from 'maybeasy';
 
