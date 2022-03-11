@@ -1,6 +1,6 @@
 import { User } from '@domain/user';
 import { mapToUserDto, mapMaybeToUserDto } from '@adapter/inbound/mappers'
-import { createUUID } from '@infrastructure/utilities';
+import { createUUID } from '@infrastructure/factories';
 import { nothing, just } from 'maybeasy';
 import { first_name, last_name, phone } from 'casual';
 

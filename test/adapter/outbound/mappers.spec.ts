@@ -1,6 +1,6 @@
 import { toUser, toPresentUser } from '@adapter/outbound/mappers';
 import { UserData } from '@adapter/outbound/models';
-import { createUUID } from '@infrastructure/utilities';
+import { createUUID } from '@infrastructure/factories';
 import { first_name, last_name, phone } from 'casual';
 import { just, nothing } from 'maybeasy';
 

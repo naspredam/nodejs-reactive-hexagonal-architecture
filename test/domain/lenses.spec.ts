@@ -1,6 +1,6 @@
 import { User } from '@domain/user';
 import { domainLenses } from '@domain/lenses';
-import { createUUID } from '@infrastructure/utilities';
+import { createUUID } from '@infrastructure/factories';
 import { first_name, last_name, phone } from 'casual';
 
 describe('User lenses suite', () => {

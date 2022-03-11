@@ -1,7 +1,7 @@
 import { userReaderAdapter } from '@adapter/outbound/adapters';
 import * as repository from '@infrastructure/inMemoryRepository';
 import { UserData } from '@adapter/outbound/models';
-import { createUUID } from '@infrastructure/utilities';
+import { createUUID } from '@infrastructure/factories';
 import { first_name, last_name, phone } from 'casual';
 import { nothing, just } from 'maybeasy';
 import { SinonStub, stub } from 'sinon';

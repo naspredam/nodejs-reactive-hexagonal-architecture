@@ -1,5 +1,5 @@
 import { routes } from '@infrastructure/routes';
-import { createUUID } from '@infrastructure/utilities';
+import { createUUID } from '@infrastructure/factories';
 import { findUserAdapter } from '@adapter/inbound/adapters';
 import request from 'supertest';
 import { Server } from 'http';

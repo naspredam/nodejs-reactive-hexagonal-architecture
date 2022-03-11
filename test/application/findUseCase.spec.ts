@@ -1,5 +1,5 @@
 import { userReaderAdapter } from "@adapter/outbound/adapters";
-import { createUUID } from "@infrastructure/utilities";
+import { createUUID } from "@infrastructure/factories";
 import { mock, SinonMock } from "sinon";
 import { of } from 'rxjs';
 import { just, nothing } from "maybeasy";
