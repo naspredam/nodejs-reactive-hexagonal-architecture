@@ -3,7 +3,7 @@ import { createUUID } from "@infrastructure/factories";
 import { mock, SinonMock } from "sinon";
 import { of } from 'rxjs';
 import { just, nothing } from "maybeasy";
-import { findAllService, findUserService } from "@application/findUseCases";
+import { findAllService, findUserService } from "@application/usecases/findUseCases";
 import { first_name, last_name, phone } from "casual";
 import { User } from "@domain/user";
 

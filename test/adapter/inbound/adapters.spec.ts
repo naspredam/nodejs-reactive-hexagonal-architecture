@@ -1,6 +1,6 @@
 import { User } from '@domain/user';
 import { findUserAdapter } from '@adapter/inbound/adapters'
-import { findUserService, findAllService } from '@application/findUseCases';
+import { findUserService, findAllService } from '@application/usecases/findUseCases';
 import { createUUID } from '@infrastructure/factories';
 import { mock, SinonMock } from 'sinon';
 import { first_name, last_name, phone } from 'casual';

@@ -1,14 +1,9 @@
+import { UserReaderPort } from '@application/port/outbound';
 import { UserData } from '@adapter/outbound/models';
-import { User, UserId } from '@domain/user';
+import { UserId } from '@domain/user';
 import { toPresentUser, toUser } from '@adapter/outbound/mappers';
 import { all } from '@infrastructure/inMemoryRepository';
-import { Observable, of, map } from 'rxjs';
-import { Maybe } from 'maybeasy';
-
-interface UserReaderPort {
-    findById: (userId: UserId) => Observable<Maybe<User>>;
-    findAll: () => Observable<User[]>;
-}
+import { of, map } from 'rxjs';
 
 export const userReaderAdapter: UserReaderPort = {
     findById: ({ id }: UserId) => of(all)

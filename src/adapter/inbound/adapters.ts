@@ -1,12 +1,7 @@
-import { UserDto } from '@adapter/inbound/dtos';
 import { mapToUserDto, mapMaybeToUserDto } from '@adapter/inbound/mappers';
-import { findAllService, findUserService } from '@application/findUseCases';
-import { Observable, map } from 'rxjs';
-
-interface FindUserPort {
-    fetchUserById: (id: string) => Observable<UserDto | undefined>;
-    fetchAll: () => Observable<UserDto[]>;
-}
+import { FindUserPort } from '@application/port/inbound';
+import { findAllService, findUserService } from '@application/usecases/findUseCases';
+import { map } from 'rxjs';
 
 export const findUserAdapter: FindUserPort = {
     fetchUserById: (id: string) =>
